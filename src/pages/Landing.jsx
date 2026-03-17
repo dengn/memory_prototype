@@ -69,6 +69,8 @@ export default function LandingPage() {
               className="text-sm text-slate-400 hover:text-slate-200 transition-colors">GitHub</a>
             <a href="https://github.com/matrixorigin/Memoria#api-reference" target="_blank" rel="noreferrer"
               className="text-sm text-slate-400 hover:text-slate-200 transition-colors">Docs</a>
+            <button onClick={() => nav('/pricing')}
+              className="text-sm text-slate-400 hover:text-slate-200 transition-colors cursor-pointer">Pricing</button>
             <Btn small ghost onClick={() => nav('/auth')}>Sign in</Btn>
             <Btn small primary onClick={() => nav('/auth')}>Get Started Free <ArrowRight size={14} /></Btn>
           </div>
@@ -320,6 +322,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-6 text-xs text-slate-500">
             <a href="https://github.com/matrixorigin/Memoria" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">GitHub</a>
             <a href="https://github.com/matrixorigin/openclaw-memoria" target="_blank" rel="noreferrer" className="hover:text-slate-300 transition-colors">OpenClaw Plugin</a>
+            <button onClick={() => nav('/pricing')} className="hover:text-slate-300 transition-colors cursor-pointer">Pricing</button>
             <span>© 2026 MatrixOrigin</span>
           </div>
         </div>

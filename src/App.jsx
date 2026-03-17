@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import LandingPage from './pages/Landing'
+import PricingPage from './pages/Pricing'
 import AuthPage from './pages/Auth'
 import ValueDemoPage from './pages/ValueDemo'
 import DashboardLayout from './pages/dashboard/Layout'
@@ -18,6 +19,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/pricing" element={<PricingPage />} />
       <Route path="/auth" element={<AuthPage onAuth={() => setAuthed(true)} />} />
       <Route
         path="/welcome"
