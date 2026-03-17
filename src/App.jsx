@@ -10,6 +10,7 @@ import MemoriesPage from './pages/dashboard/Memories'
 import GitMemoryPage from './pages/dashboard/GitMemory'
 import AgentsPage from './pages/dashboard/Agents'
 import PlaygroundPage from './pages/dashboard/Playground'
+import UsagePage from './pages/dashboard/Usage'
 import SettingsPage from './pages/dashboard/Settings'
 
 export default function App() {
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="git" element={<GitMemoryPage />} />
         <Route path="playground" element={<PlaygroundPage />} />
         <Route path="agents" element={<AgentsPage />} />
+        <Route path="usage" element={<UsagePage />} />
         <Route path="settings" element={<SettingsPage />} />
       </Route>
     </Routes>

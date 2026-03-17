@@ -2,7 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { Logo } from '../../components/ui'
 import {
   LayoutDashboard, Brain, GitBranch, Plug, Settings,
-  MessageSquare, ChevronDown, Plus, Lock
+  MessageSquare, BarChart3, ChevronDown, Plus, Lock
 } from 'lucide-react'
 import { useState } from 'react'
 
@@ -12,6 +12,7 @@ const NAV = [
   { to: '/dashboard/git', label: 'Git for Memory', icon: GitBranch },
   { to: '/dashboard/playground', label: 'Playground', icon: MessageSquare },
   { to: '/dashboard/agents', label: 'Agents', icon: Plug },
+  { to: '/dashboard/usage', label: 'Usage', icon: BarChart3 },
   { to: '/dashboard/settings', label: 'Settings', icon: Settings },
 ]
 
